@@ -19,14 +19,30 @@
         scale="1 2 3"
         shadow>
       </a-box>
+
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-       <a-sky color="#ECECEC"></a-sky>
+
+      <a-sky color="#ECECEC"></a-sky>
+
        <a-tetrahedron
-       position="-3 1.5 -3"
-       rotation="-90 0 0"
-       width="4"
-       height="4"
-       color="orange"></a-tetrahedron>
+         position="-3 1.5 -3"
+         rotation="-90 10 10"
+         width="4"
+         height="4"
+         color="orange"></a-tetrahedron>
+         <a-entity
+         geometry="primitive: dodecahedron; radius: 0"
+         position="8 5 -9">
+       </a-entity>
+
+        <a-entity
+          geometry="primitive: ring; radiusInner: 0.5; radiusOuter: 1"
+          material="side: double"
+          position="0.5 2.6 -2"
+          rotation="-30 30 50">
+        </a-entity>
+
+
     </a-scene>
   </body>
 </html>
